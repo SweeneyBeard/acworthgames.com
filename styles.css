@@ -39,15 +39,16 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(260px, 430px) minmax(0, 1fr);
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
   align-items: center;
   gap: clamp(42px, 7vw, 92px);
 }
 
 .logo {
-  width: 100%;
+  width: min(100%, 260px);
   height: auto;
   display: block;
+  justify-self: center;
   border-radius: 50%;
   box-shadow:
     0 28px 80px rgba(0, 0, 0, 0.42),
@@ -126,7 +127,7 @@ footer {
   }
 
   .logo {
-    width: min(78vw, 360px);
+    width: min(68vw, 240px);
     justify-self: center;
   }
 
