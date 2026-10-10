@@ -335,12 +335,36 @@ footer {
   }
 }
 
-/* Agnivar game page */
+
+.featured-game {
+  margin: 22px 0 0;
+}
+
+.featured-game a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--blue-soft);
+  font-weight: 750;
+  text-decoration-thickness: 1px;
+}
+
+.featured-game a:hover {
+  color: var(--cream);
+}
+
+@media (max-width: 780px) {
+  .featured-game {
+    text-align: center;
+  }
+}
+
+/* Abrecan game page. Keep branding isolated from the studio and policy pages. */
 .game-body {
   background:
-    radial-gradient(circle at 18% 30%, rgba(255, 105, 24, 0.13), transparent 32rem),
-    radial-gradient(circle at 85% 18%, rgba(255, 188, 64, 0.08), transparent 28rem),
-    #050100;
+    radial-gradient(circle at 18% 30%, rgba(0, 163, 255, 0.16), transparent 32rem),
+    radial-gradient(circle at 85% 18%, rgba(98, 74, 255, 0.14), transparent 28rem),
+    #020617;
 }
 
 .game-page {
@@ -362,17 +386,18 @@ footer {
 
 .game-logo-frame {
   position: relative;
-  width: min(100%, 320px);
+  isolation: isolate;
+  width: min(100%, 360px);
   justify-self: center;
 }
 
 .game-logo-frame::before {
   content: "";
   position: absolute;
-  inset: 10%;
+  inset: 12%;
   z-index: -1;
   border-radius: 50%;
-  background: rgba(255, 103, 20, 0.24);
+  background: rgba(0, 148, 255, 0.24);
   filter: blur(56px);
 }
 
@@ -380,11 +405,7 @@ footer {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 26px;
-  box-shadow:
-    0 34px 90px rgba(0, 0, 0, 0.62),
-    0 0 0 1px rgba(255, 183, 92, 0.16),
-    0 0 48px rgba(255, 91, 16, 0.12);
+  filter: drop-shadow(0 24px 44px rgba(0, 100, 255, 0.24));
 }
 
 .game-copy {
@@ -392,22 +413,22 @@ footer {
 }
 
 .game-page .eyebrow {
-  color: #ffad66;
+  color: #8deaff;
 }
 
 .game-page h1 {
   max-width: none;
-  color: #fff8ed;
+  color: #f2faff;
   font-size: clamp(3.6rem, 9vw, 7rem);
-  line-height: 0.92;
+  line-height: 0.98;
   letter-spacing: -0.055em;
-  text-shadow: 0 0 42px rgba(255, 91, 16, 0.14);
+  text-shadow: 0 0 42px rgba(0, 183, 255, 0.2);
 }
 
 .game-intro {
   margin: 26px 0 0;
   max-width: 58ch;
-  color: #d5c5b8;
+  color: #c2d5e6;
   font-size: clamp(1.05rem, 2vw, 1.2rem);
   line-height: 1.75;
 }
@@ -419,15 +440,15 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  border: 1px solid rgba(255, 157, 77, 0.28);
+  border: 1px solid rgba(80, 211, 255, 0.32);
   border-radius: 999px;
-  color: #f2dfcf;
-  background: rgba(78, 24, 5, 0.54);
+  color: #dfedff;
+  background: rgba(8, 34, 76, 0.64);
   font-size: 0.94rem;
 }
 
 .game-status strong {
-  color: #fff4e8;
+  color: #f2faff;
 }
 
 .game-status-dot {
@@ -435,19 +456,19 @@ footer {
   height: 9px;
   flex: 0 0 auto;
   border-radius: 50%;
-  background: #ff7a2d;
-  box-shadow: 0 0 18px rgba(255, 122, 45, 0.78);
+  background: #48e6ff;
+  box-shadow: 0 0 18px rgba(72, 230, 255, 0.72);
 }
 
 .game-support {
   margin-top: 38px;
   padding-top: 28px;
-  border-top: 1px solid rgba(255, 173, 102, 0.17);
+  border-top: 1px solid rgba(80, 211, 255, 0.22);
 }
 
 .game-support h2 {
   margin: 0 0 10px;
-  color: #fff8ed;
+  color: #f2faff;
   font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -455,12 +476,12 @@ footer {
 
 .game-support p {
   margin: 0;
-  color: #bdaea3;
+  color: #bdcee1;
   line-height: 1.7;
 }
 
 .game-support a {
-  color: #ffad66;
+  color: #8deaff;
 }
 
 .game-links {
@@ -471,14 +492,14 @@ footer {
 }
 
 .game-links a {
-  color: #d8c7b9;
+  color: #dae9fa;
   font-size: 0.92rem;
   font-weight: 700;
-  text-decoration-color: rgba(255, 173, 102, 0.42);
+  text-decoration-color: rgba(80, 211, 255, 0.56);
 }
 
 .game-links a:hover {
-  color: #fff8ed;
+  color: #ffffff;
 }
 
 @media (max-width: 780px) {
@@ -496,7 +517,7 @@ footer {
   }
 
   .game-logo-frame {
-    width: min(76vw, 320px);
+    width: min(76vw, 360px);
   }
 
   .game-copy {
