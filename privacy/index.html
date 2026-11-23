@@ -196,13 +196,15 @@
           <li>provider-controlled app-instance, installation, or session identifiers.</li>
         </ul>
         <p>
-          We do not intentionally attach names, email addresses, contacts, precise location,
-          advertising IDs, or arbitrary free-form text to Gameplay Analytics. We do not use
-          Gameplay Analytics to personalize advertising. Where we enable Google
-          Analytics, we target a two-month retention period for user-level
-          and event-level data unless a materially different period is
-          separately disclosed. Standard aggregated reports may be retained
-          differently by Google.
+          We do not intentionally supply names, email addresses, contacts,
+          precise location, advertising IDs, or arbitrary free-form text in
+          Acworth-defined gameplay events. We do not deliberately build
+          advertising audiences from those events. These limits do not establish
+          that a provider never processes other technical information or combines
+          data through its own configurations and services. If Analytics is
+          enabled in a released game, provider/project settings govern
+          retention; we do not promise a fixed deletion date for records
+          controlled by the provider.
         </p>
       </section>
 
@@ -224,15 +226,18 @@
           you subsequently enabled Diagnostics.
         </p>
         <p>
-          Turning Diagnostics off disables Acworth-controlled diagnostic reporting and
-          requests deletion of supported unsent reports. A game may require the application
-          process to exit so the change can fully take effect. Disabling Diagnostics does not
-          retroactively delete information already received by Google.
+          Our in-game Diagnostics control is designed to stop future
+          Acworth-controlled reporting and request removal of locally cached,
+          unsent reports where supported. Its full effect may require an
+          application restart and depends on the shipped integration.
+          It cannot undo prior disclosures or delete reports already
+          received by a provider.
         </p>
         <p>
-          Google currently states that Firebase Crashlytics keeps crash stack traces and
-          associated identifiers for 90 days before beginning removal from live and backup
-          systems.
+          Firebase Crashlytics has its own published retention and deletion
+          practices, which may change. Provider-controlled records may have
+          different schedules from locally stored reports; we do not
+          guarantee their deletion on a fixed date.
         </p>
         <h3>Diagnostics outside this choice</h3>
         <p>
@@ -256,9 +261,12 @@
 
         <h3>Personalized advertising</h3>
         <p>
-          <strong>Personalized advertising is off by default.</strong> If you do not enable
-          personalized advertising, Acworth Games requests non-personalized ads with
-          restricted data processing from Google.
+          <strong>Personalized advertising is off by default.</strong>
+          Where supported, our integration is designed to request
+          non-personalized ad treatment, together with applicable restricted
+          processing signals, when personalization is not allowed.
+          The provider's handling depends on its technology, your settings,
+          and the law.
         </p>
         <p>
           Non-personalized advertising is not the same as no data processing. Google may
@@ -269,8 +277,10 @@
           aggregated reporting even when they are not used for behavioral ad targeting.
         </p>
         <p>
-          Our current implementation disables Google's Publisher first-party ID. We do not
-          authorize personalized advertising merely because it is technically available.
+          SDK settings may be used to limit identification or personalization,
+          but they do not establish that every identifier or all independent
+          provider processing is disabled. We do not treat SDK availability
+          alone as permission to personalize ads.
         </p>
 
         <h3>If you enable personalized ads</h3>
@@ -283,9 +293,10 @@
           privacy mechanisms.
         </p>
         <p>
-          If you later turn Personalized Ads off, the game is designed to invalidate
-          rewarded ads loaded under the prior Acworth Games personalization setting and make
-          future requests using the more private treatment.
+          If you later turn Personalized Ads off, our advertising integration
+          is designed to clear previously loaded ad inventory and apply the
+          more restrictive treatment to new requests. This does not reverse
+          information already received or processed by an ad provider.
         </p>
 
         <h3>Advertising data</h3>
@@ -296,9 +307,11 @@
           diagnostics, and provider-controlled identifiers.
         </p>
         <p>
-          We do not currently authorize third-party advertising mediation partners as part
-          of this privacy design. If we add a materially different advertising provider or
-          mediation partner, we will update our disclosures before using it.
+          Our reviewed advertising integration does not authorize mediation
+          partners beyond the providers disclosed here. If we introduce a
+          materially different provider or partner, we will review whether
+          additional notice, controls, or permissions are required before
+          the new processing begins.
         </p>
       </section>
 
@@ -310,11 +323,12 @@
           are separate from the Acworth Games Personalized Ads preference.
         </p>
         <p>
-          Where required by the provider integration, our games refresh Google's consent
-          information before requesting ads and do not request ads unless Google indicates
-          that ads may be requested. Where Google requires a privacy-options entry point,
-          the game may provide access to Google's privacy-choice interface from Privacy &
-          Data settings.
+          Where applicable, our integration is designed to check Google's
+          consent status before making ad requests, including whether
+          the provider permits a request. This does not mean that no SDK
+          initialization or other provider-controlled processing can occur
+          beforehand. A game may offer the provider's privacy-options
+          interface through its privacy settings when required.
         </p>
       </section>
 
