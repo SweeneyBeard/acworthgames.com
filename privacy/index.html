@@ -82,6 +82,76 @@
           If a privacy preference cannot be read or saved reliably, our game is designed to
           fail toward the more private state rather than silently enabling an optional use.
         </p>
+        <h3>Data Processing by Feature</h3>
+        <p>
+          This table summarizes common practices across our publicly released games and
+          website. A row applies only when you use a game or feature that offers it.
+          Data categories and provider handling may vary by game, device, and service.
+          The following sections provide additional detail and describe your choices.
+        </p>
+        <div class="legal-table-scroll" role="region" aria-label="Data processing by feature" tabindex="0">
+          <table class="legal-data-table">
+            <caption>Typical information, purposes, recipients, and controls</caption>
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Data and purpose</th>
+                <th scope="col">When and with whom</th>
+                <th scope="col">Retention and controls</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Local gameplay</th>
+                <td>Saved progress, game settings, and privacy choices to operate the game and remember preferences.</td>
+                <td>Stored on your device; local storage alone does not require an Acworth Games server.</td>
+                <td>Generally until changed, reset, or local application data is cleared, subject to device behavior.</td>
+              </tr>
+              <tr>
+                <th scope="row">Cloud saves and leaderboards</th>
+                <td>Eligible progress, scores, unlocks, achievements, selected preferences, and synchronization identifiers.</td>
+                <td>Google Play Games or another supported platform when signed in, including automatically recognized sign-in.</td>
+                <td>Provider-managed; signing out or resetting local progress does not necessarily delete remote records.</td>
+              </tr>
+              <tr>
+                <th scope="row">Purchases</th>
+                <td>Product details, purchase and entitlement status to deliver or restore paid features.</td>
+                <td>Google Play or another applicable store when a purchase or restoration is requested.</td>
+                <td>Local entitlement state and platform records, each subject to its applicable controls and retention.</td>
+              </tr>
+              <tr>
+                <th scope="row">Advertising</th>
+                <td>Device and network data, ad events, privacy signals, and provider identifiers for ad delivery, measurement, and fraud prevention.</td>
+                <td>AdMob, UMP, or disclosed providers where ads are offered; some processing can occur without personalization permission.</td>
+                <td>Provider policies and available ad/privacy controls; disabling personalization is not deletion.</td>
+              </tr>
+              <tr>
+                <th scope="row">Optional gameplay analytics</th>
+                <td>Game events, limited content identifiers, app/device/session metadata, and coarse region to understand and improve gameplay.</td>
+                <td>Analytics provider, such as Firebase Analytics, only where enabled by a separate applicable choice.</td>
+                <td>Provider/project retention and available reset controls; collection is distinct from cloud saves and ads.</td>
+              </tr>
+              <tr>
+                <th scope="row">Optional crash reporting</th>
+                <td>Crash traces, technical app/device state, and pseudonymous installation or session identifiers to diagnose faults.</td>
+                <td>Crashlytics or a disclosed provider where separately enabled and supported by the game.</td>
+                <td>Provider-managed; turning this option off does not erase previously received reports.</td>
+              </tr>
+              <tr>
+                <th scope="row">Platform and ad-SDK diagnostics</th>
+                <td>Technical faults, performance, SDK status, or network metadata to operate and secure provider services.</td>
+                <td>Google Play Android Vitals, advertising SDKs, or relevant platform providers independently of optional Crashlytics permission.</td>
+                <td>Provider-controlled, under their applicable notices and controls.</td>
+              </tr>
+              <tr>
+                <th scope="row">Website and support</th>
+                <td>Hosting requests and technical logs; information you voluntarily send when asking for help.</td>
+                <td>Website hosting and email/support providers as needed to deliver pages and answer requests.</td>
+                <td>Operational and support needs, legal obligations, and provider policies.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p>
           These opt-in controls govern Acworth Games' optional telemetry and advertising
           personalization. They are not a general switch for every service you use.
