@@ -26,12 +26,15 @@
     <header class="legal-header">
       <p class="eyebrow">Privacy</p>
       <h1>Privacy Policy</h1>
-      <p class="legal-updated">Last updated: September 26, 2026</p>
+      <p class="legal-updated">Last updated: November 22, 2026</p>
       <div class="legal-summary">
-        Acworth Games, LLC uses a privacy-first approach. In games that support them,
-        Gameplay Analytics, Crash & Diagnostic Reports, and Personalized Advertising are
-        separate optional choices and are off by default. Declining them does not prevent
-        ordinary gameplay.
+        Acworth Games does not operate a business selling player databases or
+        player lists. Where offered, Gameplay Analytics, Crash &amp; Diagnostic
+        Reports, and Personalized Advertising are separate, off-by-default
+        choices. Google and other platform or advertising providers may
+        independently process data, including in ways that privacy laws may
+        classify as a sale or sharing. The following sections describe
+        these practices, including features used only by some games.
       </div>
     </header>
 
@@ -46,10 +49,15 @@
           to this policy (collectively, the "Services").
         </p>
         <p>
-          This is a company-wide policy. A particular game may use only some of the
-          technologies or practices described here. If a title introduces materially
-          different privacy practices, we will update this policy or provide a supplemental
-          notice before that processing begins.
+          This company-wide policy describes practices that may apply to our
+          publicly released games and website. Not every game offers every
+          feature described here. A description of a feature does not mean
+          that the feature is present or active in every game. Where a
+          particular game introduces data practices that are materially
+          different or are not adequately covered by these disclosures,
+          we will update this policy or provide an appropriate
+          game-specific notice before the new processing begins,
+          as required by applicable law.
         </p>
       </section>
 
@@ -74,6 +82,84 @@
           If a privacy preference cannot be read or saved reliably, our game is designed to
           fail toward the more private state rather than silently enabling an optional use.
         </p>
+        <h3>Data Processing by Feature</h3>
+        <p>
+          This table summarizes common practices across our publicly released games and
+          website. A row applies only when you use a game or feature that offers it.
+          Data categories and provider handling may vary by game, device, and service.
+          The following sections provide additional detail and describe your choices.
+        </p>
+        <div class="legal-table-scroll" role="region" aria-label="Data processing by feature" tabindex="0">
+          <table class="legal-data-table">
+            <caption>Typical information, purposes, recipients, and controls</caption>
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Data and purpose</th>
+                <th scope="col">When and with whom</th>
+                <th scope="col">Retention and controls</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Local gameplay and choices</th>
+                <td>Saved progress, game settings, privacy choices, and where required a timestamped copy of accepted Terms.</td>
+                <td>Stored on your device; local storage alone does not require an Acworth Games server.</td>
+                <td>Generally until changed, reset, or local application data is cleared, subject to device behavior.</td>
+              </tr>
+              <tr>
+                <th scope="row">Cloud saves and leaderboards</th>
+                <td>Eligible progress, scores, unlocks, achievements, selected preferences, and synchronization identifiers.</td>
+                <td>Google Play Games or another supported platform when signed in, including automatically recognized sign-in.</td>
+                <td>Provider-managed; signing out or resetting local progress does not necessarily delete remote records.</td>
+              </tr>
+              <tr>
+                <th scope="row">Purchases</th>
+                <td>Product details, purchase and entitlement status to deliver or restore paid features.</td>
+                <td>Google Play or another applicable store when a purchase or restoration is requested.</td>
+                <td>Local entitlement state and platform records, each subject to its applicable controls and retention.</td>
+              </tr>
+              <tr>
+                <th scope="row">Advertising</th>
+                <td>Device and network data, ad events, privacy signals, and provider identifiers for ad delivery, measurement, and fraud prevention.</td>
+                <td>AdMob, UMP, or disclosed providers where ads are offered; some processing can occur without personalization permission.</td>
+                <td>Provider policies and available ad/privacy controls; disabling personalization is not deletion.</td>
+              </tr>
+              <tr>
+                <th scope="row">Optional gameplay analytics</th>
+                <td>Game events, limited content identifiers, app/device/session metadata, and coarse region to understand and improve gameplay.</td>
+                <td>Analytics provider, such as Firebase Analytics, only where enabled by a separate applicable choice.</td>
+                <td>Provider/project retention and available reset controls; collection is distinct from cloud saves and ads.</td>
+              </tr>
+              <tr>
+                <th scope="row">Optional crash reporting</th>
+                <td>Crash traces, technical app/device state, and pseudonymous installation or session identifiers to diagnose faults.</td>
+                <td>Crashlytics or a disclosed provider where separately enabled and supported by the game.</td>
+                <td>Provider-managed; turning this option off does not erase previously received reports.</td>
+              </tr>
+              <tr>
+                <th scope="row">Platform and ad-SDK diagnostics</th>
+                <td>Technical faults, performance, SDK status, or network metadata to operate and secure provider services.</td>
+                <td>Google Play Android Vitals, advertising SDKs, or relevant platform providers independently of optional Crashlytics permission.</td>
+                <td>Provider-controlled, under their applicable notices and controls.</td>
+              </tr>
+              <tr>
+                <th scope="row">Website and support</th>
+                <td>Hosting requests and technical logs; information you voluntarily send when asking for help.</td>
+                <td>Website hosting and email/support providers as needed to deliver pages and answer requests.</td>
+                <td>Operational and support needs, legal obligations, and provider policies.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          These opt-in controls govern Acworth Games' optional telemetry and advertising
+          personalization. They are not a general switch for every service you use.
+          Google Play may process purchase and platform information; signed-in Google
+          Play Games features may synchronize game progress; and contextual advertising
+          can involve Google processing limited device and network information. These
+          functional and provider-controlled activities are explained separately below.
+        </p>
       </section>
 
       <section>
@@ -90,31 +176,44 @@
           until you reset it, clear application storage, or uninstall the game, subject to
           your operating system and platform behavior.
         </p>
+        <p>
+          Where a game requires affirmative acceptance of its Terms before
+          gameplay, it may store a device-local copy of the exact Terms
+          version accepted and the device-recorded acceptance timestamp.
+          This record is used to remember the applicable agreement and is
+          separate from permissions for optional Analytics, Diagnostics,
+          or Personalized Advertising. Device timestamps are not
+          independently verified identity or time evidence.
+        </p>
       </section>
 
       <section>
         <h2>4. Gameplay Analytics</h2>
         <p>
-          If you enable Gameplay Analytics, a game may use Google Analytics for Firebase to
-          help us understand gameplay progression, completion, difficulty, reliability, and
-          feature use. Our current design intentionally limits Acworth-defined gameplay
-          reporting to narrow, catalogued events such as level starts, level completions,
-          and level failures.
+          If you enable Gameplay Analytics in a game that offers it, that game may
+          use Google Analytics for Firebase to help us understand gameplay
+          progression, engagement, difficulty, reliability, and feature use.
+          We aim to limit Acworth-defined gameplay reporting to specific,
+          documented events relevant to the features actually offered.
         </p>
         <p>Depending on the title and provider behavior, Analytics may process:</p>
         <ul>
-          <li>approved gameplay events and content identifiers such as level numbers;</li>
+          <li>approved gameplay events and limited identifiers for relevant in-game content;</li>
           <li>application version, session, and software information;</li>
           <li>operating-system and limited device information;</li>
           <li>coarse country or region inferred from network information; and</li>
           <li>provider-controlled app-instance, installation, or session identifiers.</li>
         </ul>
         <p>
-          We do not intentionally attach names, email addresses, contacts, precise location,
-          advertising IDs, or arbitrary free-form text to Gameplay Analytics. We do not use
-          Gameplay Analytics to personalize advertising. Our current Analytics configuration
-          targets a two-month retention period for user-level and event-level data. Standard
-          aggregated reports may be retained differently by Google.
+          We do not intentionally supply names, email addresses, contacts,
+          precise location, advertising IDs, or arbitrary free-form text in
+          Acworth-defined gameplay events. We do not deliberately build
+          advertising audiences from those events. These limits do not establish
+          that a provider never processes other technical information or combines
+          data through its own configurations and services. If Analytics is
+          enabled in a released game, provider/project settings govern
+          retention; we do not promise a fixed deletion date for records
+          controlled by the provider.
         </p>
       </section>
 
@@ -136,31 +235,47 @@
           you subsequently enabled Diagnostics.
         </p>
         <p>
-          Turning Diagnostics off disables Acworth-controlled diagnostic reporting and
-          requests deletion of supported unsent reports. A game may require the application
-          process to exit so the change can fully take effect. Disabling Diagnostics does not
-          retroactively delete information already received by Google.
+          Our in-game Diagnostics control is designed to stop future
+          Acworth-controlled reporting and request removal of locally cached,
+          unsent reports where supported. Its full effect may require an
+          application restart and depends on the shipped integration.
+          It cannot undo prior disclosures or delete reports already
+          received by a provider.
         </p>
         <p>
-          Google currently states that Firebase Crashlytics keeps crash stack traces and
-          associated identifiers for 90 days before beginning removal from live and backup
-          systems.
+          Firebase Crashlytics has its own published retention and deletion
+          practices, which may change. Provider-controlled records may have
+          different schedules from locally stored reports; we do not
+          guarantee their deletion on a fixed date.
+        </p>
+        <h3>Diagnostics outside this choice</h3>
+        <p>
+          The Crash & Diagnostic Reports switch governs Acworth Games' optional Firebase
+          Crashlytics reporting. It does not turn off platform-controlled Google Play
+          Android Vitals, advertising SDK diagnostics, operating-system reporting, or
+          records that a provider already received. Those are separate processing paths
+          subject to provider controls and applicable law.
         </p>
       </section>
 
       <section>
         <h2>6. Advertising</h2>
         <p>
-          Some Acworth Games titles may offer advertising, including rewarded advertisements
-          that a player chooses to watch in exchange for an in-game benefit. Where enabled,
-          we currently use Google AdMob and Google's User Messaging Platform ("UMP").
+          Some Acworth Games titles may display rewarded advertisements that a player chooses
+          to watch for an in-game benefit, as well as banner or between-level advertisements.
+          Where enabled, we currently use Google AdMob and Google's User Messaging Platform
+          ("UMP"). Optional Gameplay Analytics or Diagnostics permission is not required
+          merely to show a permitted advertisement.
         </p>
 
         <h3>Personalized advertising</h3>
         <p>
-          <strong>Personalized advertising is off by default.</strong> If you do not enable
-          personalized advertising, Acworth Games requests non-personalized ads with
-          restricted data processing from Google.
+          <strong>Personalized advertising is off by default.</strong>
+          Where supported, our integration is designed to request
+          non-personalized ad treatment, together with applicable restricted
+          processing signals, when personalization is not allowed.
+          The provider's handling depends on its technology, your settings,
+          and the law.
         </p>
         <p>
           Non-personalized advertising is not the same as no data processing. Google may
@@ -171,8 +286,10 @@
           aggregated reporting even when they are not used for behavioral ad targeting.
         </p>
         <p>
-          Our current implementation disables Google's Publisher first-party ID. We do not
-          authorize personalized advertising merely because it is technically available.
+          SDK settings may be used to limit identification or personalization,
+          but they do not establish that every identifier or all independent
+          provider processing is disabled. We do not treat SDK availability
+          alone as permission to personalize ads.
         </p>
 
         <h3>If you enable personalized ads</h3>
@@ -185,9 +302,10 @@
           privacy mechanisms.
         </p>
         <p>
-          If you later turn Personalized Ads off, the game is designed to invalidate
-          rewarded ads loaded under the prior Acworth Games personalization setting and make
-          future requests using the more private treatment.
+          If you later turn Personalized Ads off, our advertising integration
+          is designed to clear previously loaded ad inventory and apply the
+          more restrictive treatment to new requests. This does not reverse
+          information already received or processed by an ad provider.
         </p>
 
         <h3>Advertising data</h3>
@@ -198,9 +316,11 @@
           diagnostics, and provider-controlled identifiers.
         </p>
         <p>
-          We do not currently authorize third-party advertising mediation partners as part
-          of this privacy design. If we add a materially different advertising provider or
-          mediation partner, we will update our disclosures before using it.
+          Our reviewed advertising integration does not authorize mediation
+          partners beyond the providers disclosed here. If we introduce a
+          materially different provider or partner, we will review whether
+          additional notice, controls, or permissions are required before
+          the new processing begins.
         </p>
       </section>
 
@@ -212,11 +332,12 @@
           are separate from the Acworth Games Personalized Ads preference.
         </p>
         <p>
-          Where required by the provider integration, our games refresh Google's consent
-          information before requesting ads and do not request ads unless Google indicates
-          that ads may be requested. Where Google requires a privacy-options entry point,
-          the game may provide access to Google's privacy-choice interface from Privacy &
-          Data settings.
+          Where applicable, our integration is designed to check Google's
+          consent status before making ad requests, including whether
+          the provider permits a request. This does not mean that no SDK
+          initialization or other provider-controlled processing can occur
+          beforehand. A game may offer the provider's privacy-options
+          interface through its privacy settings when required.
         </p>
       </section>
 
@@ -232,6 +353,46 @@
           submitted score, and leaderboard rank may be visible to other users according to
           the platform's rules and your account settings. Acworth Games does not receive your
           Google account password.
+        </p>
+        <h3>Cloud Saves and Cross-Device Synchronization</h3>
+        <p>
+          If a released game offers cloud saves or cross-device progression
+          through Google Play Games or another platform, signing into the
+          relevant platform enables that game's cloud-save functionality.
+          The platform may automatically recognize a previously authorized
+          sign-in when the game launches. Eligible game information may then
+          be downloaded or uploaded without a separate cloud-save consent
+          prompt. If you do not want platform cloud saves, do not sign in
+          to the relevant platform for that game, and manage any automatic
+          sign-in through the platform's account controls. Being signed out
+          generally prevents that game's account-linked cloud synchronization,
+          but does not erase information already stored by the provider.
+          Where supported, local play and local saving may remain available.
+          Optional Gameplay Analytics, Crash &amp; Diagnostic Reports, and
+          Personalized Advertising settings do not control signed-in cloud
+          saving.
+        </p>
+        <p>
+          The information synchronized depends on the game. It may include
+          saved progress and completed gameplay records; scores, achievements,
+          levels and unlocks; selected game, audio and accessibility
+          preferences; favorites; and limited identifiers, versions or
+          conflict-resolution information needed for reliable synchronization.
+          A particular game's cloud save may include fewer or different
+          categories of game data. Cloud saves are used to restore or
+          synchronize supported game features, not as authorization for
+          optional Gameplay Analytics or Crash &amp; Diagnostic Reports.
+          The platform provider may independently process account-linked
+          synchronized information under its own privacy practices.
+        </p>
+        <p>
+          Signing out, resetting local gameplay, changing privacy settings,
+          clearing local storage, or uninstalling a game does not necessarily
+          erase remote saves, previously published leaderboard scores,
+          platform achievements, or purchase records. The available controls
+          and data categories depend on the game and platform. Contact us
+          about information within our control, and use the platform's
+          account and privacy controls for information it independently holds.
         </p>
       </section>
 
@@ -268,10 +429,11 @@
       <section>
         <h2>11. AcworthGames.com</h2>
         <p>
-          AcworthGames.com is a static website operated by Acworth Games, LLC and hosted
-          using ordinary website-hosting infrastructure. We do not add analytics services,
-          advertising, advertising trackers, mailing lists, contact forms, or similar
-          third-party tracking or engagement services to the site.
+          AcworthGames.com is currently a static website hosted using ordinary
+          website-hosting infrastructure. Based on the website's current
+          implementation, we do not intentionally integrate advertising or
+          analytics trackers, mailing lists, or contact-form services.
+          A linked third-party website may have its own data practices.
         </p>
         <p>
           AcworthGames.com does not intentionally place analytics or advertising cookies on
@@ -384,29 +546,53 @@
           </li>
         </ul>
         <p>
-          Third-party platforms and providers may independently process information under
-          their own terms, privacy policies, and legal obligations.
+          Third-party platforms and providers, including Google, may
+          process information for their own purposes under their terms,
+          privacy policies, and legal obligations. We control our own
+          product choices and disclosures, but cannot guarantee how a
+          third party independently handles information it receives.
+          Applicable legal obligations and player rights continue to apply
+          to our use and disclosure of information.
         </p>
       </section>
 
       <section>
-        <h2>16. Sale, Sharing, and Targeted Advertising</h2>
+        <h2>16. Data Sales, Sharing, and Targeted Advertising</h2>
         <p>
-          Acworth Games does not sell personal information for money and does not operate as
-          a data broker.
+          Acworth Games' current business model does not involve separately
+          selling player databases or licensing player lists to data brokers.
+          We do not intentionally repurpose optional Gameplay Analytics or
+          Crash &amp; Diagnostic Reports to create advertising audiences.
+          These statements describe our practices; they are not a promise
+          that no information is ever disclosed to a third party, or that
+          every disclosure is exempt from the legal definitions of a
+          "sale" or "sharing."
         </p>
         <p>
-          Some privacy laws use terms such as "sell," "share," or "targeted advertising"
-          more broadly than an exchange for money. Certain personalized-advertising
-          disclosures or uses can fall within those definitions. Personalized advertising
-          is therefore an independent optional choice and is off by default.
+          Some games use Google AdMob or other disclosed platform services
+          for advertising and functional features. Providers may collect
+          and process information under their own privacy notices and
+          account controls. Certain advertising-related disclosures may
+          constitute "selling," "sharing," or "targeted advertising" under
+          applicable privacy law, even if we do not receive direct payment
+          for providing player information. Our choice not to operate a
+          player-data sales business does not determine the legal status
+          of every advertising SDK transfer.
         </p>
         <p>
-          Where applicable law gives you a right to opt out of qualifying sale, sharing, or
-          targeted advertising, you may turn Personalized Ads off in the game's Privacy &
-          Data settings, use a supported legally recognized universal opt-out mechanism
-          where applicable, or contact us. We will not discriminate against you for
-          exercising applicable privacy rights.
+          Where offered, Personalized Advertising is an independent
+          optional choice that is off by default. The separate choice
+          does not eliminate all data processing associated with
+          non-personalized advertisements. Provider choices and legally
+          required restrictions may impose additional limits.
+        </p>
+        <p>
+          Where applicable law gives you the right to opt out of qualifying
+          sales, sharing, or targeted advertising, you may use the
+          appropriate in-game privacy controls, available provider
+          settings, a supported legally recognized opt-out signal where
+          applicable, or contact us. We do not discriminate against
+          players for exercising applicable privacy rights.
         </p>
       </section>
 
@@ -417,17 +603,21 @@
           on that game's design, distribution, store declarations, and applicable law.
         </p>
         <p>
-          If a title is directed to children, we have actual knowledge that applicable
-          children's privacy law covers a user, or a platform requires age-restricted
-          treatment, we will apply the additional protections required for that situation.
-          Personalized advertising will not be enabled for users treated as children or
-          otherwise subject to an age restriction that prohibits personalization.
+          A game intended for children, or subject to additional age-based
+          requirements, may need different advertising settings, provider
+          limitations, notices, and parental controls. Where applicable
+          law or platform policy prohibits personalized advertising for
+          an age group, the affected game must restrict it. This company-wide
+          notice is not verification of a particular game's age treatment
+          or advertising-provider configuration.
         </p>
         <p>
-          Where verifiable parental consent is legally required before collecting, using, or
-          disclosing a child's personal information, we will obtain that consent before the
-          non-exempt processing occurs. A child-directed or mixed-audience title may provide
-          a supplemental child or parental privacy notice.
+          Where verifiable parental consent is required for non-exempt
+          processing, that processing must not begin without appropriate
+          authorization. This may require restricting features, providers,
+          or distribution until the applicable requirements are met.
+          A child-directed or mixed-audience game may require a
+          supplemental child or parental privacy notice.
         </p>
       </section>
 
@@ -443,14 +633,15 @@
             reset it, clear application storage, or uninstall the application.
           </li>
           <li>
-            For enabled Google Analytics data, our current target for user-level and
-            event-level retention is two months. Aggregated reports may be retained
-            differently by Google.
+            If optional Analytics is enabled, user-level, event-level,
+            and aggregate retention depend on the relevant provider and
+            project configuration. We do not promise a fixed provider
+            deletion date.
           </li>
           <li>
-            Firebase currently states that Crashlytics keeps covered crash information and
-            associated identifiers for 90 days before beginning removal from live and backup
-            systems.
+            Crashlytics and other diagnostic providers determine retention
+            and deletion schedules for information they receive, subject
+            to their policies and applicable law.
           </li>
           <li>
             Advertising, application-store, Play Games, and other platform providers may
@@ -462,6 +653,13 @@
             disputes, and maintain legitimate records.
           </li>
         </ul>
+        <p>
+          Account-linked platform cloud saves may remain with their provider
+          after an in-game reset or uninstall. Platform leaderboards,
+          achievements, billing records, Android Vitals, and previously
+          delivered reports can have separate retention rules. We do not
+          represent a local gameplay reset as deletion of those records.
+        </p>
       </section>
 
       <section>
@@ -487,11 +685,13 @@
           the United States.
         </p>
         <p>
-          Where applicable law requires safeguards for international transfers of personal
-          information, we and our providers rely on appropriate legally recognized
-          mechanisms. If applicable law requires us to appoint a local representative, we
-          will identify that representative in this policy or a supplemental regional
-          notice.
+          Specific cross-border transfer safeguards and provider arrangements
+          depend on the service and applicable law. We do not represent
+          that every provider transfer is covered by a particular legal
+          mechanism without confirming the relevant arrangement. Where
+          an additional transfer safeguard or local representative is
+          legally required, the applicable requirements must be addressed
+          for that processing. You may contact us for available details.
         </p>
       </section>
 
@@ -543,6 +743,16 @@
           saves and progress, so you should not use that method solely as a privacy-request
           mechanism unless you understand that consequence.
         </p>
+        <p>
+          Where a game offers both privacy reset and gameplay reset controls,
+          those operations address different categories of locally managed
+          information. Neither necessarily erases provider-controlled cloud
+          saves, leaderboards, achievements, purchases, Android Vitals, or
+          reports already received by third parties. To request deletion of
+          information we can identify and control, contact
+          privacy@acworthgames.com. For platform-controlled information,
+          consult the relevant provider's account and privacy controls.
+        </p>
       </section>
 
       <section>
@@ -582,6 +792,7 @@
           request.
         </p>
       </section>
+
     </div>
   </main>
 
