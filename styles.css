@@ -246,6 +246,64 @@ footer {
   color: #edf5fa;
 }
 
+
+/* Company-wide privacy data table, scrollable on small screens. */
+.legal-table-scroll {
+  margin: 16px 0 22px;
+  overflow-x: auto;
+  border: 1px solid rgba(115, 189, 245, 0.24);
+  border-radius: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.legal-table-scroll:focus-visible {
+  outline: 3px solid #8deaff;
+  outline-offset: 3px;
+}
+
+.legal-data-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.legal-data-table caption {
+  padding: 12px 14px;
+  color: #e7f1f7;
+  font-weight: 700;
+  text-align: left;
+  background: rgba(12, 41, 64, 0.5);
+}
+
+.legal-data-table th,
+.legal-data-table td {
+  padding: 12px 14px;
+  border-top: 1px solid rgba(115, 189, 245, 0.15);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.legal-data-table thead th {
+  color: #f2faff;
+  background: rgba(31, 71, 101, 0.65);
+}
+
+.legal-data-table tbody th {
+  color: #e7f1f7;
+  font-weight: 700;
+  width: 19%;
+}
+
+.legal-data-table tbody td {
+  color: var(--muted);
+}
+
+.legal-data-table tbody tr:nth-child(even) {
+  background: rgba(115, 189, 245, 0.04);
+}
+
 .legal-content code {
   color: var(--cream);
   background: rgba(115, 189, 245, 0.12);
